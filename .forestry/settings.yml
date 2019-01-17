@@ -4,6 +4,16 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: _produits
+  label: Produits
+  create: all
+  match: "**/*"
+- type: directory
+  path: _sliders
+  label: Sliders
+  create: all
+  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
