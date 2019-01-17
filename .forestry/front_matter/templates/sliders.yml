@@ -1,0 +1,14 @@
+---
+label: sliders
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: titre
+  label: titre
+- type: textarea
+  name: text
+  label: text
+- type: file
+  name: image
+  label: image
