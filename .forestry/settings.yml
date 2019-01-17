@@ -9,11 +9,15 @@ sections:
   label: Produits
   create: all
   match: "**/*"
+  templates:
+  - produits
 - type: directory
   path: _sliders
   label: Sliders
   create: all
   match: "**/*"
+  templates:
+  - sliders
 - type: jekyll-pages
   label: Pages
   create: all
