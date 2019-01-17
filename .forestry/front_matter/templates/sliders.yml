@@ -13,4 +13,5 @@ fields:
   name: image
   label: image
 pages:
+- _sliders/slide-2.md
 - _sliders/slide-1.md
