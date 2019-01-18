@@ -5,328 +5,85 @@ layout: default
 <section class="vk-content">
     <div class="vk-home vk-home-slider">
         <div class="vk-baner-slider vk-slider-arrow-image">
-
-            <div class="vk-banner vk-banner-large vk-banner-mod vk-background-image-25">
+            {% for slider in site.sliders %}
+            <div class="vk-banner " style="background-image: url({{ slider.image }});position: relative; height: 500px">
                 <div class="vk-background-overlay vk-background-black _70"></div>
                 <div class="container wrapper">
                     <div class="page-heading">
                       <span class="vk-text title-main">
-                          <span class="vk-text-color-yellow-1" data-animation="fadeInLeft" data-delay="0.5s">Construction</span>
-                           <span data-animation="fadeIn" data-delay="1s">Building</span>
+                          <span class="vk-text-color-green-1" data-animation="fadeInLeft" data-delay="0.5s">{{ slider.titre }}</span>
                       </span>
 
-                        <span class="vk-text title-sub" data-animation="fadeInUp" data-delay="1.3s"><span class="vk-text-color-yellow-1">WICON</span> IS THE BEST CONSTRUCTION SERVICES</span>
+                        <span class="vk-text title-sub" data-animation="fadeInUp" data-delay="1.3s"> {{ slider.text }}</span>
                     </div>
                 </div>
             </div>
             <!--./vk-banner-->
-
-
-            <div class="vk-banner vk-banner-large vk-banner-mod vk-background-image-26">
-                <div class="vk-background-overlay vk-background-black _70"></div>
-                <div class="container wrapper">
-                    <div class="page-heading">
-                      <span class="vk-text title-main">
-                        <span class="vk-text-color-yellow-1" data-animation="fadeInDown" data-delay="0.5s">Construction</span>
-                        <span data-animation="fadeInUp" data-delay="0.5s">Building</span>
-                      </span>
-                      <span class="vk-text title-sub">
-                        <span class="vk-text-color-yellow-1" data-animation="fadeInLeft" data-delay="0.6s">WICON</span>
-                        <span data-animation="fadeInRight" data-delay="0.6s">IS THE BEST CONSTRUCTION SERVICES</span>
-                      </span>
-                    </div>
-                </div>
-            </div>
-            <!--./vk-banner-->
-
-
-            <div class="vk-banner vk-banner-large vk-banner-mod vk-background-image-27">
-                <div class="vk-background-overlay vk-background-black _70"></div>
-                <div class="container wrapper">
-                    <div class="page-heading">
-        <span class="vk-text title-main">
-                <span class="vk-text-color-yellow-1" data-animation="flipInX" data-delay="0.5s">Construction</span>
-                <span  data-animation="flipInX" data-delay="0.7s"> Building</span>
-
-             </span>
-                        <span class="vk-text title-sub" data-animation="flipInX" data-delay="0.9s">
-                <span class="vk-text-color-yellow-1" > WICON</span> IS THE BEST CONSTRUCTION SERVICES
-             </span>
-                    </div>
-                </div>
-            </div>
-            <!--./vk-banner-->
+            {% endfor %}
 
         </div>
         <!-- ./vk-banner-slider-->
-
-        <div class="vk-what-we-do-section vk-section vk-section-style-2 vk-section-style-3">
-            <div class="container">
-                <h2 class="vk-heading vk-heading-border vk-heading-border-left">
-                  <span>
-                    <span class="vk-text-color-yellow-1">what</span> we do
-                  </span>
+        <div class="vk-iconbox-fullwidth clearfix">
+            <div class="text-center vk-space x-medium" style="background-image: url(../images/eco_1.jpg); position: relative;">
+                <div class="vk-background-overlay vk-background-green-1 _80"></div>
+                <h2 class="vk-heading vk-heading-inverse vk-heading-line vk-heading-line-center">
+                 
+                    <span class="vk-text-color-white">Société eco-responsable</span>
+                    
                 </h2>
-                <nav class="box-filter text-center clearfix">
-
-                    <ul class="vk-filter vk-filter-button-fix hidden-xs hidden-sm">
-
-                        <li class="data-filter" data-filter=".first">consultant</li>
-
-                        <li class="data-filter" data-filter=".data-design">design</li>
-
-                        <li class="data-filter" data-filter=".data-building">building</li>
-
-                        <li class="data-filter" data-filter=".data-furniture">furniture</li>
-
-                    </ul>
-                    <!--./vk-filter-->
-
-                    <select class="vk-filter vk-filter-button-fix form-control hidden-md hidden-lg" id="dropdown-filter">
-
-                        <option class="data-filter" value=".first">consultant</option>
-
-                        <option class="data-filter" value=".data-design">design</option>
-
-                        <option class="data-filter" value=".data-building">building</option>
-
-                        <option class="data-filter" value=".data-furniture">furniture</option>
-
-                    </select>
-                    <!--./vk-filter-->
-                </nav>
-
-                <div class="row vk-filter-fix">
-
-                    <div class="item first">
-                        <div class="col-md-6 left">
-
-                            <div class="vk-img-frame">
-                                <img src="images/services/image-7.jpg" alt=""/>
-                            </div>
-                        </div>
-                        <!--./left-->
-
-                        <div class="col-md-6 right">
-                            <div class="content">
-                                <h4 class="text-uppercase vk-title">CONSULTANT</h4>
-                                <p>Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Let’s see what Chef Dee got that they don’t want us to eat. Cloth talk. Mogul talk. </p>
-                            </div>
-                            <div class="vk-buttons">
-                                <div class="vk-counter vk-counter-non-icon">
-                                    <ul class="content">
-                                        <li class="number-count" data-to="500">500</li>
-                                        <li class="title text-uppercase">projects</li>
-                                    </ul>
-                                </div>
-                                <a href="4.2-project-grid.html" class="vk-btn vk-btn-transparent text-uppercase">SEE ALL
-                                    <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                            <!--./vk-buttons-->
-
-                            <div class="vk-work-step-mini">
-                                <h4 class="vk-title text-uppercase">work process</h4>
-                                <ul class="vk-list vk-list-inline vk-list-step-mini">
-                                    <li aria-level="1">first step</li>
-                                    <li aria-level="2">second step</li>
-                                    <li aria-level="3">third step</li>
-                                </ul>
-                            </div>
-                            <!--./vk-work-step-mini-->
-                        </div>
-                        <!--./right-->
-                    </div>
-
-                    <div class="item data-design">
-                        <div class="col-md-6 left">
-
-                            <div class="vk-img-frame">
-                                <img src="images/services/image-6.jpg" alt=""/>
-                            </div>
-                        </div>
-                        <!--./left-->
-
-                        <div class="col-md-6 right">
-                            <div class="content">
-                                <h4 class="text-uppercase vk-title">Design</h4>
-                                <p>Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Let’s see what Chef Dee got that they don’t want us to eat. Cloth talk. Mogul talk. </p>
-                            </div>
-                            <div class="vk-buttons">
-                                <div class="vk-counter vk-counter-non-icon">
-                                    <ul class="content">
-                                        <li class="number-count" data-to="500">500</li>
-                                        <li class="title text-uppercase">projects</li>
-                                    </ul>
-                                </div>
-                                <a href="4.2-project-grid.html" class="vk-btn vk-btn-transparent text-uppercase">SEE ALL
-                                    <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                            <!--./vk-buttons-->
-
-                            <div class="vk-work-step-mini">
-                                <h4 class="vk-title text-uppercase">work process</h4>
-                                <ul class="vk-list vk-list-inline vk-list-step-mini">
-                                    <li aria-level="1">first step</li>
-                                    <li aria-level="2">second step</li>
-                                    <li aria-level="3">third step</li>
-                                </ul>
-                            </div>
-                            <!--./vk-work-step-mini-->
-                        </div>
-                        <!--./right-->
-                    </div>
-
-                    <div class="item data-building">
-                        <div class="col-md-6 left">
-
-                            <div class="vk-img-frame">
-                                <img src="images/services/image-5.jpg" alt=""/>
-                            </div>
-                        </div>
-                        <!--./left-->
-
-                        <div class="col-md-6 right">
-                            <div class="content">
-                                <h4 class="text-uppercase vk-title">building</h4>
-                                <p>Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Let’s see what Chef Dee got that they don’t want us to eat. Cloth talk. Mogul talk. </p>
-                            </div>
-                            <div class="vk-buttons">
-                                <div class="vk-counter vk-counter-non-icon">
-                                    <ul class="content">
-                                        <li class="number-count" data-to="500">500</li>
-                                        <li class="title text-uppercase">projects</li>
-                                    </ul>
-                                </div>
-                                <a href="4.2-project-grid.html" class="vk-btn vk-btn-transparent text-uppercase">SEE ALL
-                                    <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                            <!--./vk-buttons-->
-
-                            <div class="vk-work-step-mini">
-                                <h4 class="vk-title text-uppercase">work process</h4>
-                                <ul class="vk-list vk-list-inline vk-list-step-mini">
-                                    <li aria-level="1">first step</li>
-                                    <li aria-level="2">second step</li>
-                                    <li aria-level="3">third step</li>
-                                </ul>
-                            </div>
-                            <!--./vk-work-step-mini-->
-                        </div>
-                        <!--./right-->
-                    </div>
-
-                    <div class="item data-furniture">
-                        <div class="col-md-6 left">
-
-                            <div class="vk-img-frame">
-                                <img src="images/services/image-4.jpg" alt=""/>
-                            </div>
-                        </div>
-                        <!--./left-->
-
-                        <div class="col-md-6 right">
-                            <div class="content">
-                                <h4 class="text-uppercase vk-title">furniture</h4>
-                                <p>Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Let’s see what Chef Dee got that they don’t want us to eat. Cloth talk. Mogul talk. </p>
-                            </div>
-                            <div class="vk-buttons">
-                                <div class="vk-counter vk-counter-non-icon">
-                                    <ul class="content">
-                                        <li class="number-count" data-to="500">500</li>
-                                        <li class="title text-uppercase">projects</li>
-                                    </ul>
-                                </div>
-                                <a href="4.2-project-grid.html" class="vk-btn vk-btn-transparent text-uppercase">SEE ALL
-                                    <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                            <!--./vk-buttons-->
-
-                            <div class="vk-work-step-mini">
-                                <h4 class="vk-title text-uppercase">work process</h4>
-                                <ul class="vk-list vk-list-inline vk-list-step-mini">
-                                    <li aria-level="1">first step</li>
-                                    <li aria-level="2">second step</li>
-                                    <li aria-level="3">third step</li>
-                                </ul>
-                            </div>
-                            <!--./vk-work-step-mini-->
-                        </div>
-                        <!--./right-->
-                    </div>
-
-                </div>
-                <!--./row-->
             </div>
-            <!--./container-->
-        </div>
-        <!--./vk-what-we-do-section-->
 
-        <div class="vk-counter-section vk-background-image-24 vk-counter-section-style-1 vk-parallax">
-            <div class="vk-background-overlay vk-background-black-1 _80"></div>
-            <div class="container">
-                <div class="row">
 
-                    <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-12 vk-clear-padding">
 
-                        <div class="vk-counter vk-counter-dark vk-counter-inline first-child">
-                            <i class="flaticon flaticon-ruler-and-pencil"></i>
-                            <ul class="content">
-                                <li class="number-count" data-to="500">500</li>
-                                <li class="title text-uppercase">projects</li>
-                            </ul>
-                        </div>
-                        <!--./vk-counter-->
-
+                <div class="vk-iconbox text-center">
+                    <div class="icon">
+                        <i class="flaticon flaticon-wrench"></i>
                     </div>
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <div class="vk-counter vk-counter-dark vk-counter-inline">
-                            <i class="flaticon flaticon-worker-1"></i>
-                            <ul class="content">
-                                <li class="number-count" data-to="500">500</li>
-                                <li class="title text-uppercase">projects</li>
-                            </ul>
-                        </div>
-                        <!--./vk-counter-->
-
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <div class="vk-counter vk-counter-dark vk-counter-inline">
-                            <i class="flaticon flaticon-wrench"></i>
-                            <ul class="content">
-                                <li class="number-count" data-to="500">500</li>
-                                <li class="title text-uppercase">projects</li>
-                            </ul>
-                        </div>
-                        <!--./vk-counter-->
-
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <div class="vk-counter vk-counter-dark vk-counter-inline">
-                            <i class="flaticon flaticon-bricks"></i>
-                            <ul class="content">
-                                <li class="number-count" data-to="500">500</li>
-                                <li class="title text-uppercase">projects</li>
-                            </ul>
-                        </div>
-                        <!--./vk-counter-->
-
+                    <div class="iconbox-content">
+                        <h4 class="vk-title text-uppercase">Production</h4>
+                        <p class="vk-text text-justify">SENIRANAUTO.SA est une société  anonyme sénégalaise créée en janvier 2006 spécialisée dans la construction, la commercialisation et l’exportation de véhicules.</p>
                     </div>
                 </div>
-                <!-- /.row -->
+                <!--./vk-iconbox-->
+
             </div>
-            <!-- /.container -->
+
+            <div class="col-md-4 col-sm-12 vk-clear-padding">
+
+                
+                <div class="vk-iconbox text-center">
+                    <div class="icon">
+                        <i class="flaticon flaticon-worker-1"></i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="vk-title text-uppercase">CROISSANCE</h4>
+                        <p class="vk-text text-justify"> Au Sénégal, nous contribuons à la création de nombreux emplois, au transfert  de haute technologie de construction automobile et enfin au relèvement du niveau industriel.</p>
+                    </div>
+                </div>
+                <!--./vk-iconbox-->
+
+            </div>
+
+            <div class="col-md-4 col-sm-12 vk-clear-padding">
+
+                <div class="vk-iconbox text-center">
+                    <div class="icon">
+                        <i class="flaticon flaticon-plug"></i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="vk-title text-uppercase">ECOLOGIQUE</h4>
+                        <p class="vk-text text-justify">SENIRANAUTO.SA, c’est aussi la production et la commercialisation de véhicules Hybrides, une innovation de taille qui va révolutionner le secteur du transport au Sénégal.</p>
+                    </div>
+                </div>
+                <!--./vk-iconbox-->
+
+            </div>
+
         </div>
-        <!--./vk-counter-section-->
+
+
+       
 
 
         
@@ -336,7 +93,7 @@ layout: default
             <div class="container">
                 <h2 class="vk-heading vk-heading-border vk-heading-border-left">
                 <span>
-                    <span class="vk-text-color-yellow-1">nos </span>
+                    <span class="vk-text-color-green-1">nos </span>
                     Produits
                 </span>
                 </h2>
@@ -367,8 +124,8 @@ layout: default
 
         <div class="vk-iconbox-without-background vk-section">
             <div class="container">
-                <h2 class="vk-heading vk-heading-line-yellow vk-heading-line-yellow-center">
-                    <span class="vk-text-color-yellow-1">your</span>
+                <h2 class="vk-heading vk-heading-line-green vk-heading-line-green-center">
+                    <span class="vk-text-color-green-1">your</span>
                     benefits
                 </h2>
 
@@ -478,7 +235,7 @@ layout: default
                 <div class="content-section text-uppercase">
                     <h2 class="vk-heading vk-heading-border vk-heading-border-right">
             <span>
-                <span class="vk-text-color-yellow-1">join</span> our team
+                <span class="vk-text-color-green-1">join</span> our team
             </span>
 
                     </h2>
@@ -508,7 +265,7 @@ layout: default
                     <div class="col-md-6 left-content">
                         <h2 class="vk-heading vk-heading-border vk-heading-border-left">
                     <span>
-                        <span class="vk-text-color-yellow-1">customer</span>
+                        <span class="vk-text-color-green-1">customer</span>
                         say
                     </span>
                         </h2>
@@ -717,7 +474,7 @@ layout: default
                     <div class="col-md-6 right-content">
                         <h2 class="vk-heading vk-heading-border vk-heading-border-left">
                     <span>
-                        <span class="vk-text-color-yellow-1">our</span>
+                        <span class="vk-text-color-green-1">our</span>
                         clients
                     </span>
 
