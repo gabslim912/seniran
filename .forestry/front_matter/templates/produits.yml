@@ -26,9 +26,9 @@ fields:
   name: images
   label: images
 pages:
-- _produits/dena.md
-- _produits/peugeot-pars.md
-- _produits/arisun.md
 - _produits/soren.md
-- _produits/runna.md
 - _produits/samand-taxi.md
+- _produits/runna.md
+- _produits/arisun.md
+- _produits/peugeot-pars.md
+- _produits/dena.md
