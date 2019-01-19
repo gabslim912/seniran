@@ -26,4 +26,5 @@ fields:
   name: images
   label: images
 pages:
+- _produits/arisun.md
 - _produits/soren.md
