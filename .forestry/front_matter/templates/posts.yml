@@ -13,6 +13,7 @@ fields:
   name: image
   label: image
 pages:
+- _posts/forum-iran-senegal.md
 - _posts/ceremonie-pose-premiere-pierre.md
 - _posts/remise-de-voiture-a-la-police-sénégalaise.md
 - _posts/livraison-43-taxis-a-thies.md
