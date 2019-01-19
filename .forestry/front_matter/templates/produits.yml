@@ -27,6 +27,7 @@ fields:
   label: images
 pages:
 - _produits/dena.md
+- _produits/peugeot-pars.md
 - _produits/arisun.md
 - _produits/soren.md
 - _produits/runna.md
