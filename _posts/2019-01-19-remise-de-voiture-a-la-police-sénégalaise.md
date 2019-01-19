@@ -6,6 +6,7 @@ mini_desc: Il s’agit d’une dizaine d’ambulances médicalisées dernière g
   rapides sur le terrain. Les ambulances sont destinées aux zones reculées du Sénégal. L
 image: "/uploads/voiture_police.jpg"
 date: 2019-01-19 18:28:37 +0000
+layout: post
 
 ---
 Il s’agit d’une dizaine d’ambulances médicalisées dernière génération et de véhicules de patrouille et de transport de troupes pour les forces de police. L’objectif est d’assurer une bonne sécurité de proximité et de garantir des interventions rapides sur le terrain. Les ambulances sont destinées aux zones reculées du Sénégal.   

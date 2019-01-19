@@ -15,6 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: SEN IRAN AUTO
 collections:
+  posts:
+    title: Posts
+    output: true
   sliders:
     title: sliders
     output: true

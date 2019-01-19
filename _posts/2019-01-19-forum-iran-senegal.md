@@ -6,6 +6,7 @@ mini_desc: L’Ambassade de la République Islamique de  l’Iran,  en collabo
   tiendra le Lundi 09 Avril 2018 au TERROU-BI à partir de 09H30.
 image: "/uploads/forum_seniran.jpg"
 date: 2019-01-19 18:35:28 +0000
+layout: post
 
 ---
 | --- |

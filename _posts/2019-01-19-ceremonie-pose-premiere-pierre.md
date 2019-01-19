@@ -4,6 +4,7 @@ mini_desc: Son Excellence Mr Le Président de la République Mr Macky Sall Premi
   à l’époque avait posé la première pierre d’une usine de montage de voitures
 image: "/uploads/ceremonie.jpg"
 date: 2019-01-19 18:26:27 +0000
+layout: post
 
 ---
 ###### Son Excellence Mr Le Président de la République Mr Macky Sall Premier Ministre à l’époque avait posé la première pierre d’une usine de montage de voitures : Thiès, futur pôle automobile de l’Afrique de l’Ouest La Zone d’aménagement concertée de la capitale du rail a reçu, dans la matinée d’hier, le Premier ministre Macky Sall, avec, à ses côtés, Son Excellence l’adjoint au ministre de l’Industrie et des Mines de l’Iran, Dr Shaterzadeh.
