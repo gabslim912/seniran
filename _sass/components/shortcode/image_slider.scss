@@ -29,8 +29,8 @@
             left: -70px;
         }
         &:hover{
-            color: $yellow-1;
-            border-color: $yellow-1;
+            color: $green-1;
+            border-color: $green-1;
         }
     }
     .vk-img-frame {
@@ -47,7 +47,7 @@
             font-size: 18px;
             text-transform: uppercase;
             font-weight: 500;
-            color: $yellow-1;
+            color: $green-1;
         }
         .position {
             text-transform: capitalize;
@@ -167,8 +167,8 @@
             right:15px;
         }
         &:hover,&:focus{
-            border-color:$yellow-1;
-            color:$yellow-1;
+            border-color:$green-1;
+            color:$green-1;
         }
     }
 }
@@ -213,7 +213,7 @@
             }
             &.slick-active{
                 &:after{
-                    background-color: $yellow-1;
+                    background-color: $green-1;
                 }
             }
             button{
@@ -265,7 +265,7 @@
 
         &:hover,&:focus{
             color:$white;
-            background-color: $yellow-1;
+            background-color: $green-1;
             .image-preview-thumbnail{
                 width: 160px;
             }
@@ -309,10 +309,10 @@
             }
             &.slick-active,&:hover{
                 &:after{
-                    border-color: $yellow-1;
+                    border-color: $green-1;
                 }
                 &:before{
-                    background-color: $yellow-1;
+                    background-color: $green-1;
                 }
             }
         }

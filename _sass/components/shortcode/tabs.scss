@@ -20,7 +20,7 @@
             }
             &.active {
                 a {
-                    background: $yellow-1;
+                    background: $green-1;
                     color: white;
                 }
             }
@@ -44,7 +44,7 @@
                 &.active {
                     a {
                         border-bottom-color: transparent;
-                        background: $yellow-1;
+                        background: $green-1;
                     }
                 }
                 a {
@@ -83,7 +83,7 @@
                 a {
                     border: none;
                     background: transparent;
-                    color: $yellow-1;
+                    color: $green-1;
                     padding: 12px 30px;
                 }
                 &.active {
@@ -91,7 +91,7 @@
                     border-top:none;
 
                     a {
-                        @include box-shadow-inset(0 5px 0 $yellow-1);
+                        @include box-shadow-inset(0 5px 0 $green-1);
                         background: white;
                     }
                 }
@@ -122,18 +122,18 @@
                 width: 33.33%;
                 a {
                     box-sizing: border-box;
-                    background: $yellow-1;
-                    border-top: solid 5px $yellow-1;
+                    background: $green-1;
+                    border-top: solid 5px $green-1;
                     border-right: solid 1px white;
                     color: white;
                     padding: 12px 30px;
                 }
                 &.active {
-                    border-top: solid 5px $yellow-1;
+                    border-top: solid 5px $green-1;
                     a {
                         border-top: none;
                         background: $grey-4;
-                        color: $yellow-1;
+                        color: $green-1;
                     }
                 }
             }
@@ -194,7 +194,7 @@
                     background: $grey-4;
                 }
                 &.active {
-                    background: $yellow-1;
+                    background: $green-1;
                     a {
                         background: none;
                     }
@@ -224,9 +224,9 @@
                     border-right: solid 1px $grey-4;
                 }
                 &.active {
-                    border-left: solid 5px $yellow-1;
+                    border-left: solid 5px $green-1;
                     a {
-                        color: $yellow-1;
+                        color: $green-1;
                         border-right: none;
                     }
                 }
@@ -261,7 +261,7 @@
     }
     .vk-nav-tabs {
         li {
-            background: $yellow-1;
+            background: $green-1;
             a {
                 color: white;
                 border-right: none;
@@ -269,10 +269,10 @@
             }
             &.active {
                 background: $grey-4;
-                border-left: solid 5px $yellow-1;
+                border-left: solid 5px $green-1;
                 a {
                     background: transparent;
-                    color: $yellow-1;
+                    color: $green-1;
                 }
             }
         }
