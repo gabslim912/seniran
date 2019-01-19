@@ -36,15 +36,9 @@
                         <li>
                             <a href="#">Produits</a>
                             <ul class="vk-navbar-nav child">
-
-                                <li><a href="#">Voitures berlines</a></li>
-
-                                <li><a href="#">4x4</a></li>
-
-                                <li><a href="#">Taxis</a></li>
-
-                                <li><a href="#">Autres</a></li>
-
+                                {% for produit in site.produits %}
+                                <li><a href="{{ produit.url }}" target="blank">{{ produit.name }}</a></li>
+                                {% endfor %}
                             </ul>
                         </li>
 
@@ -84,7 +78,7 @@
                         </li>
 
                         <li>
-                            <a href="#">evenements</a>
+                            <a href="/posts">actualités</a>
                            
                         </li>
 

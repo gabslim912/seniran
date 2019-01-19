@@ -7,6 +7,7 @@ type: Berline
 image_principale: "/uploads/runna_ikco.jpg"
 images: []
 date: 2019-01-19 00:20:09 +0000
+layout: produit
 
 ---
 Roues et pneus	Acier 185 / 65R1486H  

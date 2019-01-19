@@ -24,13 +24,13 @@ layout: default
         </div>
         <!-- ./vk-banner-slider-->
         <div class="vk-iconbox-fullwidth clearfix">
-            <div class="text-center vk-space x-medium vk-parallax" style="background-image: url(../images/eco_1.jpg); position: relative;">
+            <div class="text-center vk-space x-medium vk-parallax" style="background-image: url(../images/eco_2.png); position: relative;">
                 <div class="vk-background-overlay vk-background-green-1 _80"></div>
-                <h2 class="vk-heading vk-heading-inverse vk-heading-line  vk-heading-line-center">
+                <!--<h2 class="vk-heading vk-heading-inverse vk-heading-line  vk-heading-line-center">
                  
                     <span class="vk-text-color-white">Société eco-responsable</span>
                     
-                </h2>
+                </h2>-->
             </div>
 
 
@@ -79,6 +79,51 @@ layout: default
                 <!--./vk-iconbox-->
 
             </div>
+            <div class="col-md-4 col-sm-12 vk-clear-padding">
+
+                <div class="vk-iconbox text-center">
+                    <div class="icon">
+                        <i class="flaticon flaticon-light-bulb"></i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="vk-title text-uppercase">TECHNOLOGIE</h4>
+                        <p class="vk-text text-justify">SENIRANAUTO.SA est une société  anonyme sénégalaise créée en janvier 2006 spécialisée dans la construction, la commercialisation et l’exportation de véhicules.</p>
+                    </div>
+                </div>
+                <!--./vk-iconbox-->
+
+            </div>
+
+            <div class="col-md-4 col-sm-12 vk-clear-padding">
+
+                
+                <div class="vk-iconbox text-center">
+                    <div class="icon">
+                        <i class="flaticon flaticon-worker"></i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="vk-title text-uppercase">ASSISTANCE</h4>
+                        <p class="vk-text text-justify"> Au Sénégal, nous contribuons à la création de nombreux emplois, au transfert  de haute technologie de construction automobile et enfin au relèvement du niveau industriel.</p>
+                    </div>
+                </div>
+                <!--./vk-iconbox-->
+
+            </div>
+
+            <div class="col-md-4 col-sm-12 vk-clear-padding">
+
+                <div class="vk-iconbox text-center">
+                    <div class="icon">
+                        <i class="flaticon flaticon-danger-1"></i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="vk-title text-uppercase">DEPANNAGE</h4>
+                        <p class="vk-text text-justify">SENIRANAUTO.SA, c’est aussi la production et la commercialisation de véhicules Hybrides, une innovation de taille qui va révolutionner le secteur du transport au Sénégal.</p>
+                    </div>
+                </div>
+                <!--./vk-iconbox-->
+
+            </div>
 
         </div>
 
@@ -103,7 +148,7 @@ layout: default
                         {% for produit in site.produits %}
                         <div class="item col-md-3">
                             <div class="vk-img-frame">
-                                <a href="{{ produit.image_principale }}" class="vk-img" data-lightbox="image-slide-0">
+                                <a href="{{ produit.url }}" target="blank" class="vk-img" data-lightbox="image-slide-0">
                                     <img src="{{ produit.image_principale }}" alt="" style="width: 270px; height: 175px">
                                 </a>
                             </div>
@@ -122,111 +167,49 @@ layout: default
         </div>
         <!-- /.vk-image-slider-style-2 -->
 
-        <div class="vk-iconbox-without-background vk-section">
-            <div class="container">
-                <h2 class="vk-heading vk-heading-line-green vk-heading-line-green-center">
-                    <span class="vk-text-color-green-1">your</span>
-                    benefits
-                </h2>
+        <!--./vk-join-our-team-section-->
+            <div class="vk-section vk-recent-blog-section">
+                <div class="container">
+                    <h2 class="vk-heading vk-heading-border vk-heading-border-left">
+                <span>
+                    <span class="vk-text-color-yellow-1">Actualités</span>
+                    récentes
+                </span>
+                    </h2>
 
-                <div class="row">
+                    <div class="row">
+                        <div class="vk-recent-blog-list vk-slider-arrow-top  vk-slider-arrow-dot-top recent-blog-slider">
+                            {% for post in site.posts %}
+                            <div class="col-md-6">
+                                <div class="vk-recent-blog">
+                                    <div class="vk-img-frame">
+                                        <a href="#" class="vk-img">
+                                            <img src="{{ post.image }}" alt="" style="width: 570px; height: 570px;">
+                                        </a>
+                                    </div>
+                                    <!--./vk-recent-blog-->
 
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="vk-iconbox  text-center">
-                            <div class="icon">
-                                <i class="flaticon flaticon-home-1"></i>
+                                    <div class="brief-content">
+                                        <h4 class="vk-title"><a href="5.3-single-blog.html">{{ post.title }}</a></h4>
+                                        <p class="vk-text brief">{{ post.mini_desc }}...</p>
+                                        <div class="vk-buttons">
+                                            <a href="#" class="vk-btn vk-btn-transparent text-uppercase vk-btn-readmore">voir plus
+                                                <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--./brief-content-->
+                                </div>
+                                <!-- /.vk-recent-blog -->
                             </div>
-                            <div class="iconbox-content">
-                                <h4 class="vk-title text-uppercase">Benefit 1</h4>
-                                <p class="vk-text">Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears.</p>
-                            </div>
+                            {% endfor %}
                         </div>
-                        <!--./vk-iconbox-->
-
                     </div>
-
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="vk-iconbox  text-center">
-                            <div class="icon">
-                                <i class="flaticon flaticon-fan"></i>
-                            </div>
-                            <div class="iconbox-content">
-                                <h4 class="vk-title text-uppercase">Benefit 2</h4>
-                                <p class="vk-text">Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears.</p>
-                            </div>
-                        </div>
-                        <!--./vk-iconbox-->
-
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="vk-iconbox  text-center">
-                            <div class="icon">
-                                <i class="flaticon flaticon-hammer"></i>
-                            </div>
-                            <div class="iconbox-content">
-                                <h4 class="vk-title text-uppercase">Benefit 3</h4>
-                                <p class="vk-text">Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears.</p>
-                            </div>
-                        </div>
-                        <!--./vk-iconbox-->
-
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="vk-iconbox  text-center">
-                            <div class="icon">
-                                <i class="flaticon flaticon-fence"></i>
-                            </div>
-                            <div class="iconbox-content">
-                                <h4 class="vk-title text-uppercase">Benefit 4</h4>
-                                <p class="vk-text">Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears.</p>
-                            </div>
-                        </div>
-                        <!--./vk-iconbox-->
-
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="vk-iconbox  text-center">
-                            <div class="icon">
-                                <i class="flaticon flaticon-inflamable"></i>
-                            </div>
-                            <div class="iconbox-content">
-                                <h4 class="vk-title text-uppercase">Benefit 5</h4>
-                                <p class="vk-text">Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears.</p>
-                            </div>
-                        </div>
-                        <!--./vk-iconbox-->
-
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="vk-iconbox  text-center">
-                            <div class="icon">
-                                <i class="flaticon flaticon-wrench"></i>
-                            </div>
-                            <div class="iconbox-content">
-                                <h4 class="vk-title text-uppercase">Benefit 6</h4>
-                                <p class="vk-text">Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears.</p>
-                            </div>
-                        </div>
-                        <!--./vk-iconbox-->
-
-                    </div>
+                    <!--.row-->
                 </div>
-                <!--./row-->
-            </div>
-            <!--./container-->
-        </div>
-        <!--./vk-iconbox-without-background-->
+                <!-- /.container -->
 
+            </div>
+            <!-- /.vk-recent-blog-section -->
 
         <div class="vk-join-our-team-section vk-background-fixed vk-section-style-4 vk-space x-large "  style="background-image: url(../images/senirancoop.jpg);position: relative;">
             <div class="vk-background-overlay vk-background-black-1 _80"></div>

@@ -7,6 +7,7 @@ type: Berline
 image_principale: "/uploads/soren_ikco.jpg"
 images: []
 date: 2019-01-19 00:06:42 +0000
+layout: produit
 
 ---
 Le nouveau Soren ELX: sûr, élégant et moderne

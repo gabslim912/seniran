@@ -7,6 +7,7 @@ type: 4x4
 image_principale: "/uploads/arisun_ikco-1.jpg"
 images: []
 date: 2019-01-19 00:08:13 +0000
+layout: produit
 
 ---
 Le pick-up Arisun est sûr, spacieux et confortable. Il bénéficie d’une capacité de chargement élevée. Avec son design intérieur élégant (y compris le tableau de bord), il offre une bonne expérience de conduite.   

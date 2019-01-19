@@ -7,6 +7,7 @@ type: Berline
 image_principale: "/uploads/pars_ikco.jpg"
 images: []
 date: 2019-01-19 00:22:09 +0000
+layout: produit
 
 ---
 Il a été dévoilé pour la première fois en tant que véhicule de luxe pour les Iraniens. C’est le fruit des efforts des experts iraniens. Peugeot Pars offre à ses occupants un confort considérable. Le véhicule est toujours classé parmi les voitures préférées des Iraniens malgré la présence de nombreux concurrents.  

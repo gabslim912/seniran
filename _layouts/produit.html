@@ -1,0 +1,193 @@
+---
+layout: default
+---
+<section class="vk-content">
+
+        <!--<div class="vk-banner vk-background-image_principale-3" style="height: 100px">
+            <div class="vk-background-overlay vk-background-black-1 _80"></div>
+            <div class="container wrapper">
+                <div class="page-heading">
+                    {{ page.title }}
+                </div>
+            </div>
+        </div>
+        <!--./vk-banner-->
+
+
+        <div class="vk-breadcrumb">
+            <nav class="container">
+                <ul>
+
+                    <li><a href="/">Acceuil</a></li>
+
+                    <li><a href="/products/">Produits</a></li>
+
+                    <li class="active">{{ page.title }}</li>
+                </ul>
+            </nav>
+        </div>
+        <!--./vk-breadcrumb-->
+
+        <!--  -->
+        <div class="" data-example-id="media-alignment">
+            <div class="vk-product-wrapper">
+                <!------ BEGIN BLOG WRPPER ------>
+                <div class="container">
+                    <div class="box-shop">
+                        <div class="row">
+                            <div class="product-view clearfix">
+                                <div class="col-md-6">
+                                    <div class="vk-slider-shop">
+                                        <div class="slider-for">
+
+                                            <img src="{{ page.image_principale }}" alt="{{ page.title }}">
+
+         
+                                        </div>
+                                        <div class="slider-nav row">
+
+                                            <div class="col-md">
+                                                <div class="vk-img-frame">
+                                                    <img src="{{ page.image_principale }}" alt="{{ page.title }}">
+                                                </div>
+                                            </div>
+
+                                            
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="detail-product">
+                                        <div class="price">
+                                            <h2 class="vk-text-capitalize">{{ page.title }}</h2>
+                                            <p>{{ page.prix }}</p>
+                                            
+                                        </div>
+                                        <div class="intro">
+                                            <p>
+                                                {{ page.mini_desc }}
+                                            </p>
+                                        </div>
+
+                                        <div class="vk-divider"></div>
+
+                                        <div class="add-to-cart">
+                                            <ul class="quantity vk-list vk-list-inline">
+                                                <li>
+                                                    <button class="vk-btn vk-btn-minus">-</button>
+                                                </li>
+                                                <li class="number"><input type="text" name="name" value="1" class="val-quantity">
+                                                </li>
+                                                <li>
+                                                    <button class="vk-btn vk-btn-plus">+</button>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="vk-btn vk-btn-default vk-btn-xs text-uppercase">
+                                                <span class="">J'achète</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="vk-divider"></div>
+                                        <div class="info">
+                                            <div class="vk-space x-small"></div>
+                                            <p><span>Numéro de série:</span> 22523525</p>
+                                            <p><span>Catégorie:</span> {{ page.type }}</p>
+                                            <div class="vk-space x-small"></div>
+                                            <div class="share">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="vk-space medium"></div>
+                            <div class="col-md-12">
+                                <div class="description">
+                                    <div class="vk-tab vk-tab-flat tab-flat-bg">
+                                        <ul class="vk-list vk-list-inline vk-nav-tabs clearfix">
+                                            <li role="presentation" class="active">
+                                                <a class="vk-cc-font-bold vk-text-uppercase" href="#tab" data-toggle="tab">description</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a class="vk-cc-font-bold vk-text-uppercase" href="#tab2" data-toggle="tab">autres informations</a>
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="tab-content vk-tab-content">
+                                            <div class="tab-pane active" id="tab">
+                                                <p>{{ page.content }}</p>
+                                                <p>{{ page.content }}</p>
+                                            </div>
+                                            <div class="tab-pane" id="tab2">
+                                                <p>{{ page.content }}</p>
+                                                <p>{{ page.content }}</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related vk-shop-related">
+                                <div class="clearfix"></div>
+                                <div class="vk-space small"></div>
+                                <h2 class="vk-heading vk-heading-border vk-heading-border-left">
+                                <span>
+                                    <span class="vk-text-color-yellow-1">Produits</span>
+                                    similaires
+                                </span>
+                                </h2>
+                                <div class="vk-shop-item vk-shop-item-light-s1 clearfix">
+                                	{%for product in site.produits limit:4 %}
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="vk-img-frame">
+                                                <a href="{{ product.url }}" target="blank" class="vk-img">
+                                                    <img src="{{ product.image_principale }}" alt="{{ product.title }}" style="width: 268px; height: 268px;" /></a>
+                                                <div class="vk-background-overlay vk-background-overlay_50">
+                                                    <a href="{{ product.url }}" target="blank"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <h4 class="vk-heading vk-text-capitalize">
+                                                <a href="{{ product.url }}" target="blank">{{ product.title }}</a></h4>
+                                            <div class="vk-divider"></div>
+                                            <div class="vk-price-rate clearfix">
+                                                <div class="price vk-cc-font-bold">{{ product.prix }}</div>
+                                                <div class="rate"><span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                                                    <span><i class="fa fa-star-o" aria-hidden="true"></i></span></div>
+                                            </div>
+                                            <div class="vk-buttons clearfix">
+                                                <button type="button" class="vk-btn  vk-btn-heart">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                <button type="button" class="vk-btn  vk-btn-share">
+                                                    <span><i class="fa fa-share-alt" aria-hidden="true"></i></span></button>
+                                                <button type="button" class="vk-btn  vk-btn-share">
+                                                    <span><i class="fa fa-random" aria-hidden="true"></i></span></button>
+                                                <button type="button" class="vk-btn  text-uppercase vk-btn-addtocart">J'achète</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------ END BLOG WRAPPER ------>
+                </div>
+            </div>
+        </div>
+        <!-- / -->
+
+    </section>

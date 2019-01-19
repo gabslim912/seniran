@@ -6,6 +6,7 @@ type: Berline
 image_principale: "/uploads/car1.jpg"
 images: []
 date: 2019-01-19 00:10:41 +0000
+layout: produit
 
 ---
 Dena +, un sommet de montagne sous vos pieds
