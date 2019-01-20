@@ -788,8 +788,8 @@ a {
   height: 160px; }
   @media (min-width: 992px) {
     .vk-banner {
-      min-height: 400px;
-      height: 400px; } }
+      min-height: 160px;
+      height:160px; } }
   .vk-banner .wrapper {
     min-height: inherit;
     height: inherit;
