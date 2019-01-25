@@ -1,27 +1,139 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<section class="vk-content">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+        <div class="vk-breadcrumb">
+            <nav class="container">
+                <ul>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+                    <li><a href="/">Accueil</a></li>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+                    <li><a href="#">blog</a></li>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+                    <li class="active">{{ page.title }}</li>
+                </ul>
+            </nav>
+        </div>
+        <!--./vk-breadcrumb-->
+
+        <!--  -->
+        <div class="" data-example-id="media-alignment">
+            <div class="vk-blog-wrapper">
+                <!------ BEGIN BLOG WRPPER ------>
+                <div class="container">
+                    <div class="row">
+                        <div class="vk-space x-large">
+                            <div class="single-blog">
+                                <div class="col-md-9">
+                                    <div class="blog-content">
+                                      <h1 class="vk-text-uppercase">{{ page.title }}</h1>
+                                        <div class="vk-img-frame">
+                                            <img src="{{ page.image }}" alt="">
+                                        </div>
+                                        
+                                        <div class="info">
+                                            <ul class="vk-list">
+                                                
+                                                <li class="vk-text-capitalize">date:<span>&nbsp; {{ page.date }} </span></li>
+                                                <li class="vk-text-capitalize">comments: &nbsp;<p>4</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="content">
+                                            <p>{{ page.content }}
+                                        </div>
+                                        <div class="share">
+                                            <ul class="list-inline">
+                                                <li class="hidden-sm hidden-xs">
+                                                    <h4 class="vk-text-uppercase">partager</h4></li>
+                                                <li>
+                                                    <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                       
+                                        
+
+                                    </div>
+                                </div>
+                                <div class="vk-space x-small hidden-md hidden-lg"></div>
+                                <div class="col-md-3">
+                                    <div class="sidebar-menu">
+                                        <!---- Input search ---->
+                                        <div class="vk-search-form  vk-fullwidth">
+                                            <div class="form-group">
+                                                <input type="text" name="key" placeholder="Rechercher" class="form-control">
+                                                <button class="vk-btn vk-btn-search"><i class="fa fa-search"></i></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="vk-space x-small"></div>
+                                        <!---- Catagory ---->
+                                        <div class="catagory">
+                                            <h4 class="vk-text-uppercase">Liens rapide</h4>
+                                            <ul class="vk-list vk-menu-right">
+                                                <li><a href="/">A Propos<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+
+                                                <li><a href="/">Services<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>                                              
+
+                                                <li><a href="/">FAQ's<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+                                                <li><a href="/">recrutement<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+
+                                                <li><a href="/contact/">Contact<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="vk-space x-small"></div>
+                                        <!---- Recentpots ---->
+                                        <div class="recentpots">
+                                            <h4 class="vk-text-uppercase">Articles récents</h4>
+                                            <div class="row">
+                                              {% for post in site.posts %}
+                                                <div class="recent-box col-sm-6 col-md-12">
+                                                    <div class="vk-img-frame">
+                                                        <a class="vk-img" href="{{ post.url }}">
+                                                            <img src="{{ post.image }}" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <a href="{{ post.url }}" class="vk-title">{{ post.title }}</a>
+                                                    <span>{{ post.date }}</span>
+                                                </div>
+                                              {% endfor %}
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="vk-space x-small"></div>
+                                        <!---- Tag ---->
+                                        <div class="tag">
+                                            <h4 class="vk-text-uppercase">tag</h4>
+                                            <ul class="list-inline">
+                                                <li class="vk-tag"><a href="#">Automobile</a></li>
+                                                <li class="vk-tag"><a href="#">Ikco</a></li>
+                                                <li class="vk-tag"><a href="#">bus</a></li>
+                                                <li class="vk-tag"><a href="#">coopération iran sénégal</a></li>
+                                                <li class="vk-tag"><a href="#">bio taxi</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------------------------------------                 -------------------------------------------->
+                            <div class="vk-space medium hidden-md hidden-lg"></div>
+                        </div>
+                    </div>
+                    <!------ END BLOG WRAPPER ------>
+                </div>
+                <div class="vk-space x-medium"></div>
+            </div>
+        </div>
+        <!-- / -->
+
+    </section>
+    <!--./content-->
